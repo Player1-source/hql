@@ -1,0 +1,4 @@
+ALTER TABLE transactions_acid COMPACT 'MAJOR';
+SHOW COMPACTIONS;
+
+ALTER TABLE sales SET TBLPROPERTIES ('orc.compress'='ZLIB');

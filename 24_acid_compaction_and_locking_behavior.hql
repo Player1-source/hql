@@ -1,0 +1,6 @@
+INSERT INTO transactions_acid VALUES (10, 2001, 500.00, 'CREDIT');
+INSERT INTO transactions_acid VALUES (11, 2001, 300.00, 'DEBIT');
+
+ALTER TABLE transactions_acid COMPACT 'MINOR';
+ALTER TABLE transactions_acid COMPACT 'MAJOR';
+SHOW COMPACTIONS;
